@@ -4,6 +4,13 @@ public class AlbumUtils {
 	public static boolean ValidarURLMetadata(String metaInfo) {
 		//Este método debe validar que las url de metadatos de los albums referencian 
 		// al sitio web del disco en la wikipedia.
-		return (Boolean) null;
+		String cs = "https://en.wikipedia.org/wiki/";
+		if ( metaInfo.contentEquals(cs) ) {
+			return true;
+		}
+		else {
+			return false;
+		}
+		
 	}
 }
